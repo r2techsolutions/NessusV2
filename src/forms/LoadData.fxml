@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" cache="true" cacheHint="QUALITY" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1200.0" stylesheets="@../css/Application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LoadDataController">
+         <children>
+            <Label fx:id="selectFileLabel" alignment="CENTER_RIGHT" layoutX="168.0" layoutY="194.0" prefHeight="25.0" prefWidth="150.0" text="Select XML File" textAlignment="RIGHT" />
+            <Button fx:id="BrowseButton" layoutX="752.0" layoutY="196.0" mnemonicParsing="false" onAction="#browseAction" prefHeight="23.0" prefWidth="110.0" text="Browse" />
+            <Button fx:id="loadDataButton" layoutX="492.0" layoutY="266.0" mnemonicParsing="false" onAction="#loadDataAction" prefHeight="23.0" prefWidth="122.0" text="Load Data" />
+            <Label fx:id="userNameLabel" layoutX="20.0" layoutY="14.0" prefHeight="25.0" prefWidth="254.0" styleClass="/css/Application.css" text="Welcom administrator " />
+            <TextField fx:id="fileNameTextField" layoutX="371.0" layoutY="196.0" prefHeight="25.0" prefWidth="354.0" />
+            <ComboBox fx:id="orgComboBox" layoutX="371.0" layoutY="148.0" prefHeight="25.0" prefWidth="354.0" />
+            <Label fx:id="messageLabel" layoutX="61.0" layoutY="308.0" prefHeight="25.0" prefWidth="639.0" />
+            <Label fx:id="selectOrgLabel" alignment="CENTER_RIGHT" layoutX="168.0" layoutY="146.0" prefHeight="25.0" prefWidth="150.0" text="Select Organization" textAlignment="RIGHT" />
+               
+         </children>
+   
+</AnchorPane>

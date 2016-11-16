@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainFrameController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem mnemonicParsing="false" text="Print" />
+                  <MenuItem mnemonicParsing="false" text="Save as..." />
+              <MenuItem mnemonicParsing="false" onAction="#exitAction" text="Exit" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Data">
+            <items>
+              <MenuItem fx:id="loadData" mnemonicParsing="false" onAction="#loadDataAction" text="Extract data from XML" />
+              <MenuItem fx:id="retrieveData" mnemonicParsing="false" onAction="#retrieveDataAction" text="Retrieve data" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Reports">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Policy" />
+                  <MenuItem mnemonicParsing="false" text="Plugin Item" />
+                  <MenuItem mnemonicParsing="false" text="Host Property" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Admin">
+              <items>
+                  <MenuItem mnemonicParsing="false" text="User" />
+                <MenuItem mnemonicParsing="false" text="Organization" />
+              </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <StackPane fx:id="contentView" prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER" xmlns:fx="http://javafx.com/fxml">
+            <children>
+                
+            </children>      
+       </StackPane>
+       
+   </center>
+</BorderPane>

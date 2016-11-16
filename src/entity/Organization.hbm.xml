@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 12, 2016 10:48:23 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class name="entity.Organization" optimistic-lock="version" table="ORGANIZATION">
+    <id name="orgId" type="int">
+      <column name="ORG_ID"/>
+      <generator class="increment"/>
+    </id>
+    <property name="orgName" type="string">
+      <column length="2000000000" name="ORG_NAME" not-null="true"/>
+    </property>
+    <property name="description" type="string">
+      <column length="2000000000" name="DESCRIPTION"/>
+    </property>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 12, 2016 10:48:23 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class name="entity.NessusStructure" optimistic-lock="version" table="NESSUS_STRUCTURE">
+    <id name="id" type="int">
+      <column name="ID"/>
+      <generator class="increment"/>
+    </id>
+    <property name="parentName" type="string">
+      <column length="2000000000" name="PARENT_NAME" not-null="true"/>
+    </property>
+    <property name="name" type="string">
+      <column length="2000000000" name="NAME" not-null="true"/>
+    </property>
+  </class>
+</hibernate-mapping>

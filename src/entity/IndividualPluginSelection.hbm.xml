@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 12, 2016 10:48:23 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entity.IndividualPluginSelection" table="INDIVIDUAL_PLUGIN_SELECTION" optimistic-lock="version">
+        <id name="pluginId" type="java.lang.Integer">
+            <column name="PLUGIN_ID" />
+            <generator class="increment" />
+        </id>
+        <property name="pluginName" type="string">
+            <column name="PLUGIN_NAME" length="2000000000" />
+        </property>
+        <property name="family" type="string">
+            <column name="FAMILY" length="2000000000" />
+        </property>
+        <property name="status" type="string">
+            <column name="STATUS" length="2000000000" />
+        </property>
+        <property name="policyId" type="java.lang.Integer">
+            <column name="POLICY_ID" />
+        </property>
+        <property name="pluginIdData" type="string">
+            <column name="PLUGIN_ID_DATA" length="2000000000" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.connection.driver_class">org.sqlite.JDBC</property>
+    <property name="hibernate.connection.url">jdbc:sqlite:C:\Work Space\NessusV2\src\database\NessusV2.db</property>
+    <property name="hibernate.connection.username">nessus</property>
+    <property name="hibernate.connection.password">password</property>
+    <property name="hibernate.dialect">org.hibernate.dialect.SQLiteDialect</property>
+    <property name="hibernate.show_sql">true</property>
+    <mapping resource="entity/FamilySelection.hbm.xml"/>
+    <mapping resource="entity/Organization.hbm.xml"/>
+    <mapping resource="entity/Preference.hbm.xml"/>
+    <mapping resource="entity/LoadCycle.hbm.xml"/>
+    <mapping resource="entity/ReportHost.hbm.xml"/>
+    <mapping resource="entity/Policy.hbm.xml"/>
+    <mapping resource="entity/Report.hbm.xml"/>
+    <mapping resource="entity/ServerPreference.hbm.xml"/>
+    <mapping resource="entity/IndividualPluginSelection.hbm.xml"/>
+    <mapping resource="entity/PluginsPreference.hbm.xml"/>
+    <mapping resource="entity/HostProperties.hbm.xml"/>
+    <mapping resource="entity/Users.hbm.xml"/>
+    <mapping resource="entity/ReportItemAttribute.hbm.xml"/>
+    <mapping resource="entity/ReportItem.hbm.xml"/>
+    <mapping resource="entity/NessusStructure.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>

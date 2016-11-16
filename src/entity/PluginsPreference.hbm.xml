@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 12, 2016 10:48:23 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entity.PluginsPreference" table="PLUGINS_PREFERENCE" optimistic-lock="version">
+        <id name="pluginsPreferenceId" type="int">
+            <column name="PLUGINS_PREFERENCE_ID" />
+            <generator class="increment" />
+        </id>
+        <property name="pluginName" type="string">
+            <column name="PLUGIN_NAME" length="2000000000" />
+        </property>
+        <property name="pluginId" type="string">
+            <column name="PLUGIN_ID" length="2000000000" />
+        </property>
+        <property name="preferenceName" type="string">
+            <column name="PREFERENCE_NAME" length="2000000000" />
+        </property>
+        <property name="preferenceType" type="string">
+            <column name="PREFERENCE_TYPE" length="2000000000" />
+        </property>
+        <property name="preferenceValue" type="string">
+            <column name="PREFERENCE_VALUE" length="2000000000" />
+        </property>
+        <property name="selectedValue" type="string">
+            <column name="SELECTED_VALUE" length="2000000000" />
+        </property>
+        <property name="preferenceId" type="java.lang.Integer">
+            <column name="PREFERENCE_ID" />
+        </property>
+        <property name="fullName" type="string">
+            <column name="FULL_NAME" length="2000000000" />
+        </property>
+    </class>
+</hibernate-mapping>

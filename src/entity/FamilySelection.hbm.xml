@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 12, 2016 10:48:23 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entity.FamilySelection" table="FAMILY_SELECTION" optimistic-lock="version">
+        <id name="familySelectionId" type="java.lang.Integer">
+            <column name="FAMILY_SELECTION_ID" />
+            <generator class="increment" />
+        </id>
+        <property name="familyName" type="string">
+            <column name="FAMILY_NAME" length="2000000000" />
+        </property>
+        <property name="status" type="string">
+            <column name="STATUS" length="2000000000" />
+        </property>
+        <property name="policyId" type="java.lang.Integer">
+            <column name="POLICY_ID" />
+        </property>
+    </class>
+</hibernate-mapping>

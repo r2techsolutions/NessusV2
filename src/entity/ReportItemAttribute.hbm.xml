@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 12, 2016 10:48:23 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class name="entity.ReportItemAttribute" optimistic-lock="version" table="REPORT_ITEM_ATTRIBUTE">
+    <id name="reportItemId" type="java.lang.Integer">
+      <column name="REPORT_ITEM_ID"/>
+      <generator class="increment"/>
+    </id>
+    <property name="port" type="java.lang.Integer">
+      <column name="PORT"/>
+    </property>
+    <property name="svcName" type="string">
+      <column length="2000000000" name="SVC_NAME"/>
+    </property>
+    <property name="protocol" type="string">
+      <column length="2000000000" name="PROTOCOL"/>
+    </property>
+    <property name="severity" type="java.lang.Integer">
+      <column name="SEVERITY"/>
+    </property>
+    <property name="pluginId" type="java.lang.Integer">
+      <column name="PLUGIN_ID"/>
+    </property>
+    <property name="pluginName" type="string">
+      <column length="2000000000" name="PLUGIN_NAME"/>
+    </property>
+    <property name="pluginFamily" type="string">
+      <column length="2000000000" name="PLUGIN_FAMILY"/>
+    </property>
+    <property name="reportHostId" type="java.lang.Integer">
+      <column name="REPORT_HOST_ID"/>
+    </property>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 12, 2016 10:48:23 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entity.LoadCycle" table="LOAD_CYCLE" optimistic-lock="version">
+        <id name="loadCycleId" type="int">
+            <column name="LOAD_CYCLE_ID" />
+            <generator class="increment" />
+        </id>
+        <property name="orgId" type="java.lang.Integer">
+            <column name="ORG_ID" />
+        </property>
+        <property name="loadTime" type="string">
+            <column name="LOAD_TIME" length="2000000000" />
+        </property>
+        <property name="loadBy" type="string">
+            <column name="LOAD_BY" length="2000000000" />
+        </property>
+    </class>
+</hibernate-mapping>

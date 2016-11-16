@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 12, 2016 10:48:23 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entity.HostProperties" table="HOST_PROPERTIES" optimistic-lock="version">
+        <id name="hostPropertiesId" type="java.lang.Integer">
+            <column name="HOST_PROPERTIES_ID" />
+            <generator class="increment" />
+        </id>
+        <property name="lastUnauthenticatedResults" type="java.lang.Integer">
+            <column name="LAST_UNAUTHENTICATED_RESULTS" />
+        </property>
+        <property name="credentialedScan" type="string">
+            <column name="CREDENTIALED_SCAN" length="2000000000" />
+        </property>
+        <property name="policyUsed" type="string">
+            <column name="POLICY_USED" length="2000000000" />
+        </property>
+        <property name="patchSummaryTotalCves" type="java.lang.Integer">
+            <column name="PATCH_SUMMARY_TOTAL_CVES" />
+        </property>
+        <property name="cpe" type="string">
+            <column name="CPE" length="2000000000" />
+        </property>
+        <property name="os" type="string">
+            <column name="OS" length="2000000000" />
+        </property>
+        <property name="cpe1" type="string">
+            <column name="CPE_1" length="2000000000" />
+        </property>
+        <property name="cpe0" type="string">
+            <column name="CPE_0" length="2000000000" />
+        </property>
+        <property name="systemType" type="string">
+            <column name="SYSTEM_TYPE" length="2000000000" />
+        </property>
+        <property name="operatingSystem" type="string">
+            <column name="OPERATING_SYSTEM" length="2000000000" />
+        </property>
+        <property name="tracerouteHop10" type="string">
+            <column name="TRACEROUTE_HOP_10" length="2000000000" />
+        </property>
+        <property name="tracerouteHop9" type="string">
+            <column name="TRACEROUTE_HOP_9" length="2000000000" />
+        </property>
+        <property name="tracerouteHop8" type="string">
+            <column name="TRACEROUTE_HOP_8" length="2000000000" />
+        </property>
+        <property name="tracerouteHop7" type="string">
+            <column name="TRACEROUTE_HOP_7" length="2000000000" />
+        </property>
+        <property name="tracerouteHop6" type="string">
+            <column name="TRACEROUTE_HOP_6" length="2000000000" />
+        </property>
+        <property name="tracerouteHop5" type="string">
+            <column name="TRACEROUTE_HOP_5" length="2000000000" />
+        </property>
+        <property name="tracerouteHop4" type="string">
+            <column name="TRACEROUTE_HOP_4" length="2000000000" />
+        </property>
+        <property name="tracerouteHop3" type="string">
+            <column name="TRACEROUTE_HOP_3" length="2000000000" />
+        </property>
+        <property name="tracerouteHop2" type="string">
+            <column name="TRACEROUTE_HOP_2" length="2000000000" />
+        </property>
+        <property name="tracerouteHop1" type="string">
+            <column name="TRACEROUTE_HOP_1" length="2000000000" />
+        </property>
+        <property name="tracerouteHop0" type="string">
+            <column name="TRACEROUTE_HOP_0" length="2000000000" />
+        </property>
+        <property name="hostEnd" type="string">
+            <column name="HOST_END" length="2000000000" />
+        </property>
+        <property name="hostIp" type="string">
+            <column name="HOST_IP" length="2000000000" />
+        </property>
+        <property name="hostStart" type="string">
+            <column name="HOST_START" length="2000000000" />
+        </property>
+        <property name="reportHostId" type="java.lang.Integer">
+            <column name="REPORT_HOST_ID" />
+        </property>
+    </class>
+</hibernate-mapping>
